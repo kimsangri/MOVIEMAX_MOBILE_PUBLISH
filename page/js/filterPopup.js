@@ -4,7 +4,7 @@ const filterPopupClose = document.querySelector(".filter_popup .btn_popup_close"
 const filterPopup = document.querySelector(".filter_popup");
 const filterPopupFrame = document.querySelector(".filter_popup .popup_frame");
 
-//filterPopup Open
+//filterPopupOpen
 filterPopupOpen.addEventListener("click", function () {
     filterPopup.classList.add("on");
     filterPopupFrame.classList.add("on");
@@ -13,7 +13,7 @@ filterPopupOpen.addEventListener("click", function () {
     document.body.style.overflow = "hidden";
 });
 
-//filterPopup Close
+//filterPopupClose
 filterPopupClose.addEventListener("click", function () {
     filterPopup.classList.remove("on");
     filterPopupFrame.classList.remove("on");

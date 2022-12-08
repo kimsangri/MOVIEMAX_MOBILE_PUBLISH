@@ -12,7 +12,6 @@ document.querySelectorAll(".cateSwiper .swiper-slide a").forEach(item => {
     });
 });
 
-
 //alertPopup
 function alertPopup(btn) {
     document.querySelectorAll(btn).forEach(item => {
