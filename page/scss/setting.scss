@@ -6,10 +6,12 @@
         align-items: center;
 
         .profile_img {
-            width: 5.6rem;
-            height: 5.6rem;
-            background: url("../../image/light/img/img_profile_big.png") no-repeat;
-            background-size: 100%;
+            a {
+                width: 5.6rem;
+                height: 5.6rem;
+                background: url("../../image/light/img/img_profile_big.png") no-repeat;
+                background-size: 100%;
+            }
         }
 
         .profile_text_box {

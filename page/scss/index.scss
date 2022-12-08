@@ -114,9 +114,12 @@ body {
         display: flex;
 
         .profile_img {
-            width: 4rem;
-            height: 4rem;
-            background: url("../../image/light/img/img_profile.png") no-repeat;
+            a {
+                display: block;
+                width: 4rem;
+                height: 4rem;
+                background: url("../../image/light/img/img_profile.png") no-repeat;
+            }
         }
 
         .profile_text_box {

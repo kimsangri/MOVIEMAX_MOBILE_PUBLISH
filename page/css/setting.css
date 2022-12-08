@@ -9,7 +9,7 @@
           align-items: center;
 }
 
-.profile_wrap .profile_box .profile_img {
+.profile_wrap .profile_box .profile_img a {
   width: 5.6rem;
   height: 5.6rem;
   background: url("../../image/light/img/img_profile_big.png") no-repeat;
