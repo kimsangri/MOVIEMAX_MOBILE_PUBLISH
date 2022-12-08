@@ -12,28 +12,18 @@ document.querySelectorAll(".cateSwiper .swiper-slide a").forEach(item => {
     });
 });
 
+
+//alertPopup
+function alertPopup(btn) {
+    document.querySelectorAll(btn).forEach(item => {
+        item.addEventListener("click", () => {
+            alert("coming soon");
+        });
+    });
+}
+
 //btnPlay
-const btnPlay = document.querySelectorAll(".btn_play");
+alertPopup(".btn_play");
 
-btnPlay.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-        alert("coming soon");
-    });
-});
-
-//btnDownload 
-const btnDownload = document.querySelectorAll(".btn_download");
-
-btnDownload.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-        alert("coming soon");
-    });
-});
-
-//btnToggle 
-const btnToggle = document.querySelector(".toggle_switch");
-
-btnToggle.addEventListener("click", function () {
-    btnToggle.classList.toggle("active");
-    document.querySelector("html").classList.toggle("dark");
-});
+//btnDownload
+alertPopup(".btn_download");

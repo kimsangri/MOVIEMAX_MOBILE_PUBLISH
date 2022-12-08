@@ -11,6 +11,7 @@
                 height: 5.6rem;
                 background: url("../../image/light/img/img_profile_big.png") no-repeat;
                 background-size: 100%;
+                cursor: default;
             }
         }
 
@@ -50,7 +51,6 @@
                 height: 5.6rem;
                 padding-left: 3.6rem;
                 position: relative;
-                cursor: pointer;
 
                 &::after {
                     content: "";
@@ -72,6 +72,7 @@
                     font-size: 1.6rem;
                     line-height: 5.6rem;
                     color: var(--colorTitle);
+                    cursor: not-allowed;
                 }
 
                 .cache_value {
@@ -87,6 +88,10 @@
 
                 &.btn_profile {
                     background: url("../../image/light/icon/icon_person.png") no-repeat left center;
+
+                    a {
+                        cursor: pointer;
+                    }
                 }
 
                 &.btn_wishlist {
@@ -95,6 +100,10 @@
 
                 &.btn_payment {
                     background: url("../../image/light/icon/icon_work.png") no-repeat left center;
+
+                    a {
+                        cursor: pointer;
+                    }
                 }
 
                 &.btn_change_pw {
@@ -131,6 +140,10 @@
 
                 &.btn_dark_mode {
                     background: url("../../image/light/icon/icon_activity.png") no-repeat left center;
+
+                    a {
+                        cursor: pointer;
+                    }
 
                     &::after {
                         display: none;

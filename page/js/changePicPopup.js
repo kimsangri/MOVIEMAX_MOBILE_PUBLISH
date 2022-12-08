@@ -1,10 +1,12 @@
 //changePicPopup script
 const changePicPopupOpen = document.querySelector(".profile_box");
-const btnPopClose = document.querySelector(".change_pic_popup .btn_popup_close");
+const changePicPopupClose = document.querySelector(".change_pic_popup .btn_popup_close");
 const changePicPopup = document.querySelector(".change_pic_popup");
 const changePicPopupFrame = document.querySelector(".change_pic_popup .popup_frame");
 
-changePicPopupOpen.addEventListener("click", function () {
+//changePicPopup Open
+changePicPopupOpen.addEventListener("click", function (e) {
+    e.preventDefault();
     changePicPopup.classList.add("on");
     changePicPopupFrame.classList.add("on");
     changePicPopup.classList.remove("off");
@@ -12,7 +14,8 @@ changePicPopupOpen.addEventListener("click", function () {
     document.body.style.overflow = "hidden";
 })
 
-btnPopClose.addEventListener("click", function () {
+//changePicPopup Close
+changePicPopupClose.addEventListener("click", function () {
     changePicPopup.classList.remove("on");
     changePicPopupFrame.classList.remove("on");
     changePicPopup.classList.add("off");

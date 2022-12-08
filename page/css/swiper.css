@@ -66,6 +66,7 @@
     border: 1px solid var(--colorBdCate);
     background-color: transparent;
     border-radius: 6rem;
+    transition: all .25s;
 }
 
 .cateSwiper a.active {

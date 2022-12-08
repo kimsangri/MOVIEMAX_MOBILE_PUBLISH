@@ -1,9 +1,10 @@
 //search script
-const searchInput = document.getElementById("search");
+const searchInput = document.querySelectorAll(".search_input");
 
-searchInput.addEventListener("keypress", function (e) {
-    if (e.keyCode == 13) {
-        location.href = "search.html";
-    }
+searchInput.forEach(function (item) {
+    item.addEventListener("keypress", function (e) {
+        if (e.keyCode == 13) {
+            location.href = "search.html";
+        }
+    });
 });
-

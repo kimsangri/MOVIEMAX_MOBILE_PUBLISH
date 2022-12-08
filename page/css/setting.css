@@ -14,6 +14,7 @@
   height: 5.6rem;
   background: url("../../image/light/img/img_profile_big.png") no-repeat;
   background-size: 100%;
+  cursor: default;
 }
 
 .profile_wrap .profile_box .profile_text_box .user_name {
@@ -58,7 +59,6 @@
   height: 5.6rem;
   padding-left: 3.6rem;
   position: relative;
-  cursor: pointer;
 }
 
 .setting_section .setting_group ul > li::after {
@@ -82,6 +82,7 @@
   font-size: 1.6rem;
   line-height: 5.6rem;
   color: var(--colorTitle);
+  cursor: not-allowed;
 }
 
 .setting_section .setting_group ul > li .cache_value {
@@ -100,12 +101,20 @@
   background: url("../../image/light/icon/icon_person.png") no-repeat left center;
 }
 
+.setting_section .setting_group ul > li.btn_profile a {
+  cursor: pointer;
+}
+
 .setting_section .setting_group ul > li.btn_wishlist {
   background: url("../../image/light/icon/icon_bookmark.png") no-repeat left center;
 }
 
 .setting_section .setting_group ul > li.btn_payment {
   background: url("../../image/light/icon/icon_work.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_payment a {
+  cursor: pointer;
 }
 
 .setting_section .setting_group ul > li.btn_change_pw {
@@ -142,6 +151,10 @@
 
 .setting_section .setting_group ul > li.btn_dark_mode {
   background: url("../../image/light/icon/icon_activity.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_dark_mode a {
+  cursor: pointer;
 }
 
 .setting_section .setting_group ul > li.btn_dark_mode::after {

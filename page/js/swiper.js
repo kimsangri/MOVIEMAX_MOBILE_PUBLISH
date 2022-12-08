@@ -1,5 +1,6 @@
 //swiper script
 
+//movieSwiper
 const movieSwiper = new Swiper(".movieSwiper", {
     effect: "coverflow",
     grabCursor: true,
@@ -20,16 +21,32 @@ const movieSwiper = new Swiper(".movieSwiper", {
     },
 });
 
+
+//cateSwiper
 const cateSwiper = new Swiper(".cateSwiper", {
     spaceBetween: 12,
     slidesPerView: 3.5
 });
 
+//releaseSwiper
 const releaseSwiper = new Swiper(".releaseSwiper", {
     spaceBetween: 12,
-    slidesPerView: 1.1
+    slidesPerView: 1.1,
+
+    breakpoints: {
+        500: {
+            slidesPerView: 1.1,
+        },
+        670: {
+            slidesPerView: 1.5,
+        },
+        700: {
+            slidesPerView: 2.5,
+        },
+    },
 });
 
+//crewSwiper
 const crewSwiper = new Swiper(".crewSwiper", {
     spaceBetween: 20,
     slidesPerView: 2.5

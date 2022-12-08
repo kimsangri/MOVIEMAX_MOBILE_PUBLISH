@@ -27,10 +27,11 @@
   left: 7.3rem;
 }
 
-.profile_wrap .profile_box .profile_img {
+.profile_wrap .profile_box .profile_img a {
   width: 10rem;
   height: 10rem;
   background: url("../../image/light/img/img_profile_big.png") no-repeat;
+  background-size: 100%;
 }
 
 .profile_section {
