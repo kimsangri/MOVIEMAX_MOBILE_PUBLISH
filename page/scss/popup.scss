@@ -229,12 +229,20 @@
 
 @media screen and (max-width: 320px) {
     .popup {
-        .popup_frame {
-            .popup_body {
-                .filter_box {
-                    .btn_filter_group {
-                        button {
-                            margin-right: .3rem;
+        &.filter_popup {
+            .popup_frame {
+                .popup_body {
+                    .filter_box {
+                        .btn_filter_group {
+                            button {
+                                margin-right: .2rem;
+                            }
+                        }
+
+                        .btn_rating_group {
+                            .btn_rating {
+                                margin-right: .2rem;
+                            }
                         }
                     }
                 }

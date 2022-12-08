@@ -6,6 +6,16 @@
 
 .movieSwiper figure {
     border-radius: 3rem;
+    position: relative;
+}
+
+.movieSwiper figcaption {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .movieSwiper img {
@@ -28,12 +38,17 @@
 }
 
 .movieSwiper .movie_name {
+    width: 80%;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #FEFEFE;
     position: absolute;
     bottom: 2rem;
     left: 1.384rem;
+    padding-bottom: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .movieSwiper .paging {
