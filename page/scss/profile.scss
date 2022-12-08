@@ -1,0 +1,149 @@
+/*profile style*/
+.profile_wrap {
+    justify-content: center;
+    padding-top: 3.7rem;
+
+    .profile_box {
+        cursor: pointer;
+        position: relative;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 3.2rem;
+            height: 3.2rem;
+            border-radius: 100%;
+            background-color: #514EB6;
+            border: 3px solid #FEFEFE;
+            background-image: url("../../image/light/icon/icon_edit.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            top: 6.8rem;
+            left: 7.3rem;
+        }
+
+        .profile_img {
+            width: 10rem;
+            height: 10rem;
+            background: url("../../image/light/img/img_profile_big.png") no-repeat;
+        }
+    }
+}
+
+.profile_section {
+    padding: 1.6rem 3.4rem 2.4rem;
+
+    .profile_group {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.6rem;
+
+        .input_title {
+            font-weight: 500;
+            font-size: 1.4rem;
+            color: var(--colorInfoText);
+            padding-bottom: .8rem;
+        }
+
+        .date_box {
+            position: relative;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 2.4rem;
+                height: 2.4rem;
+                background: url("../../image/light/icon/icon_calendar_big.png") no-repeat;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 1.2rem;
+            }
+        }
+
+        .profile_input {
+            width: 100%;
+            height: 5.2rem;
+            background-color: transparent;
+            border: 1px solid #514EB6;
+            border-radius: 2.4rem;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: var(--colorTitle);
+            padding: 0 1.6rem;
+        }
+
+        .location_text {
+            width: 100%;
+            height: 13.2rem;
+            background-color: transparent;
+            border: 1px solid #514EB6;
+            border-radius: 2.4rem;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: var(--colorTitle);
+            padding: 1.6rem 1.6rem;
+
+            &::placeholder {
+                font-weight: 500;
+                font-size: 1.6rem;
+                color: #78828A;
+            }
+        }
+
+        .gender_box {
+            display: flex;
+            justify-content: space-between;
+
+            .gender_title {
+                display: flex;
+                align-items: center;
+                width: calc(50% - .8rem);
+                height: 4.8rem;
+                font-weight: 600;
+                font-size: 16px;
+                color: var(--colorTitle);
+                background-color: transparent;
+                border: 1px solid #514EB6;
+                background-image: url("../../image/light/img/img_uncheck.png");
+                background-repeat: no-repeat;
+                background-position: 1.6rem center;
+                border-radius: 2.4rem;
+                padding-left: 5.6rem;
+                cursor: pointer;
+                transition: all .25s;
+            }
+
+            input:checked {
+                &+.gender_title {
+                    background-image: url("../../image/light/img/img_check.png");
+                }
+            }
+        }
+    }
+
+    .btn_save_change {
+        width: 100%;
+        height: 5.6rem;
+        font-weight: 600;
+        font-size: 1.6rem;
+        color: #FEFEFE;
+        background-color: #514EB6;
+        border-radius: 2.4rem;
+        margin-top: 5rem;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .profile_section {
+        .profile_group {
+            .gender_box {
+                .gender_title {
+                    padding-left: 4.5rem;
+                }
+            }
+        }
+    }
+}

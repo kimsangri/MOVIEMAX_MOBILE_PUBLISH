@@ -1,0 +1,46 @@
+/*search style*/
+.list_section.search_section {
+  padding: 0 2.4rem;
+}
+
+.list_section.search_section ul.movie_list > li {
+  margin-bottom: 2.4rem;
+}
+
+.list_section.search_section ul.movie_list > li .info_box {
+  width: calc(100% - 12rem);
+}
+
+.list_section.search_section ul.movie_list > li .info_box .movie_name {
+  padding-bottom: 1.5rem;
+}
+
+.list_section.search_section ul.movie_list > li .info_box .info_block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.list_section.search_section ul.movie_list > li .info_box .info_block .category_text {
+  color: var(--colorInfoText);
+  padding-bottom: 0;
+  padding-left: 2rem;
+  background: url("../../image/light/icon/icon_film.png") no-repeat -0.1rem -0.1rem;
+}
+
+.list_section.search_section ul.movie_list > li .info_box .info_block .time_text {
+  padding-bottom: 1rem;
+}
+
+.category_section {
+  padding-top: 0;
+}
+
+/*darkMode style*/
+.dark .list_section.search_section ul.movie_list > li .info_box .info_block .category_text {
+  background-image: url("../../image/dark/icon/icon_film.png");
+}

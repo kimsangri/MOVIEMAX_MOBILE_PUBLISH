@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviemax</title>
+    <link rel="stylesheet" href="../component/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="../common/css/fontStyle.css">
+    <link rel="stylesheet" href="../common/css/default.css">
+    <link rel="stylesheet" href="../page/css/index.css">
+    <link rel="stylesheet" href="../page/css/swiper.css">
+    <link rel="stylesheet" href="../page/css/addNewCard.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <h2 class="sub_title">Add New Card</h2>
+        <a href="payment.html" class="btn_back"><span class="hide">back</span></a>
+    </header>
+
+    <section class="add_card_section">
+        <h2><span class="hide">card info</span></h2>
+        <div class="add_card_group">
+            <label class="input_title" for="cardnumber">Card Number</label>
+            <input type="text" class="card_input" id="cardnumber" placeholder="Enter Card Number">
+        </div>
+        <div class="add_card_group">
+            <label class="input_title" for="firstname">Card Holder First Name</label>
+            <input type="text" class="card_input" id="firstname" placeholder="Enter Holder First Name">
+        </div>
+        <div class="add_card_group">
+            <label class="input_title" for="lastname">Card Holder Last Name</label>
+            <input type="text" class="card_input" id="lastname" placeholder="Enter Holder Last Name">
+        </div>
+        <div class="add_card_group seperate_group">
+            <div class="seperate_box">
+                <label class="input_title" for="expired">Expired</label>
+                <input type="text" class="card_input" id="expired" placeholder="MM/YY">
+            </div>
+            <div class="seperate_box">
+                <label class="input_title" for="cvvcode">CVV Code</label>
+                <input type="text" class="card_input" id="cvvcode" placeholder="CVV">
+            </div>
+        </div>
+    </section>
+
+    <a href="" class="btn btn_add_card">Add Card</a>
+
+    <script src="../component/swiper/swiper-bundle.min.js"></script>
+    <script src="../../publish/page/js/swiper.js"></script>
+    <script src="../../publish/page/js/button.js"></script>
+</body>
+
+</html>

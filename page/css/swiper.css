@@ -1,0 +1,116 @@
+/*swiper custom style*/
+.movieSwiper a {
+    display: block;
+    position: relative;
+}
+
+.movieSwiper figure {
+    border-radius: 3rem;
+}
+
+.movieSwiper img {
+    width: 100%;
+}
+
+.movieSwiper .category_text {
+    width: auto;
+    height: 2rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #FEFEFE;
+    border-radius: 2.4rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0 .8rem;
+    line-height: 2rem;
+    position: absolute;
+    bottom: 4.3rem;
+    left: 1.384rem;
+}
+
+.movieSwiper .movie_name {
+    font-weight: 700;
+    font-size: 14px;
+    color: #FEFEFE;
+    position: absolute;
+    bottom: 2rem;
+    left: 1.384rem;
+}
+
+.movieSwiper .paging {
+    padding: 2.1rem 0 0;
+    text-align: center;
+}
+
+.movieSwiper .paging>span {
+    width: .8rem;
+    height: .8rem;
+    background-color: #514EB6;
+    opacity: 0.32;
+    transition: width .3s;
+}
+
+.movieSwiper .paging>span.swiper-pagination-bullet-active {
+    width: 2.4rem;
+    border-radius: 10rem;
+    background-color: #514EB6;
+    opacity: 1;
+}
+
+.cateSwiper a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    min-height: 3.4rem;
+    padding: 0 2.4rem;
+    border: 1px solid var(--colorBdCate);
+    background-color: transparent;
+    border-radius: 6rem;
+}
+
+.cateSwiper a.active {
+    background-color: #514EB6;
+    border-color: #514EB6;
+}
+
+.cateSwiper .cate_text {
+    font-weight: 400;
+    font-size: 1.2rem;
+    color: var(--colorValueText);
+}
+
+.cateSwiper a.active .cate_text {
+    color: #FEFEFE;
+}
+
+.cateSwiper .swiper-slide {
+    width: auto;
+}
+
+.releaseSwiper a {
+    display: flex;
+}
+
+.crewSwiper a {
+    display: flex;
+}
+
+.crewSwiper .info_box {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 4rem);
+    padding: .2rem 0 0 .8rem;
+}
+
+.crewSwiper .avatar_name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: var(--colorTitle);
+    padding-bottom: .3rem;
+}
+
+.crewSwiper .jop_text {
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--colorInfoText);
+}

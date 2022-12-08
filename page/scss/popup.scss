@@ -1,0 +1,288 @@
+/*popup style*/
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 23, 37, 0.24);
+    backdrop-filter: blur(4px);
+    position: fixed;
+    bottom: 0;
+    z-index: 300;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s all;
+
+    &.on {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    &.off {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    &.filter_popup {
+        .popup_frame {
+            width: 100%;
+            border-radius: 2.4rem 2.4rem 0 0;
+            padding: 3.3rem 2.5rem 3.5rem;
+            bottom: -100%;
+
+            &.on {
+                bottom: 0;
+            }
+
+            .popup_header {
+                padding-left: 4rem;
+                padding-bottom: 2.5rem;
+            }
+
+            .popup_body {
+                .filter_box {
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 2.4rem;
+
+                    .popup_sub_title {
+                        font-weight: 600;
+                        font-size: 1.6rem;
+                        color: var(--colorTitle);
+                        padding-bottom: 1.6rem;
+                    }
+
+                    .btn_filter_group {
+                        >div:first-child {
+                            margin-bottom: 1.8rem;
+                        }
+
+                        button {
+                            width: auto;
+                            height: 3.9rem;
+                            font-weight: 600;
+                            font-size: 12px;
+                            color: var(--colorTitle);
+                            border: 1px solid var(--colorBdBtn);
+                            background-color: transparent;
+                            border-radius: 2.4rem;
+                            padding: 0 2rem;
+                            margin-right: 1.2rem;
+
+                            &.active {
+                                background-color: #514EB6;
+                                color: #FDFDFD;
+                            }
+                        }
+                    }
+
+                    .btn_rating_group {
+                        >div:first-child {
+                            margin-bottom: 1.8rem;
+                        }
+
+                        .btn_rating {
+                            width: auto;
+                            height: 3.2rem;
+                            border: 1px solid var(--colorBdBtn);
+                            background-color: transparent;
+                            border-radius: 2.4rem;
+                            padding: 0 2rem;
+                            margin-right: 1.2rem;
+
+                            & span {
+                                display: inline-block;
+                                width: 1.4rem;
+                                height: 1.4rem;
+                                background: url("../../image/light/img/img_star.png") no-repeat;
+                            }
+
+                            &.active {
+                                border-color: #514EB6;
+                            }
+                        }
+                    }
+                }
+
+                .btn_apply {
+                    width: 100%;
+                    height: 5.6rem;
+                    font-weight: 600;
+                    font-size: 1.6rem;
+                    color: #FEFEFE;
+                    background-color: #514EB6;
+                    border-radius: 2.4rem;
+                }
+            }
+        }
+    }
+
+    &.change_pic_popup {
+        .popup_frame {
+            width: calc(100% - 4.8rem);
+            border-radius: 1.2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -100%;
+
+            &.on {
+                top: 18rem;
+            }
+
+            .popup_header {
+                justify-content: center;
+                height: 8rem;
+                border-bottom: 1px solid #E8E8E8;
+                padding-top: .5rem;
+
+                .btn_popup_close {
+                    top: 60%;
+                    transform: translateY(-60%);
+                    left: 3.2rem;
+                }
+            }
+
+            .popup_body {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                padding: 2rem 1.6rem;
+
+                button {
+                    height: 6rem;
+                    border-radius: 8px;
+                    text-align: left;
+                    padding-left: 5.5rem;
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                    color: var(--colorTitle);
+                    background-color: var(--colorBgBtn);
+                    background-position: 1.595rem center;
+                    background-repeat: no-repeat;
+
+                    &.btn_take_photo {
+                        background-image: url("../../image/light/icon/icon_camera.png");
+                    }
+
+                    &.btn_choose_file {
+                        background-image: url("../../image/light/icon/icon_folder.png");
+                    }
+
+                    &.btn_delete_photo {
+                        background-image: url("../../image/light/icon/icon_delete.png");
+                        color: #E53935;
+                    }
+                }
+            }
+        }
+    }
+
+    .popup_frame {
+        background-color: var(--colorBody);
+        z-index: 300;
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        height: 0;
+        transition: 0.7s all;
+
+        &.on {
+            opacity: 1;
+            visibility: visible;
+            height: auto;
+        }
+
+        &.off {
+            opacity: 0;
+            visibility: hidden;
+            height: 0;
+        }
+
+        .popup_header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            .btn_popup_close {
+                width: 2.4rem;
+                height: 2.4rem;
+                background: url("../../image/light/btn/btn_close.png") no-repeat;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .popup_title {
+                font-weight: 600;
+                font-size: 1.8rem;
+                color: var(--colorTitle);
+            }
+
+            .btn_reset_filter {
+                font-weight: 600;
+                font-size: 14px;
+                color: #514EB6;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+    .popup {
+        .popup_frame {
+            .popup_body {
+                .filter_box {
+                    .btn_filter_group {
+                        button {
+                            margin-right: .3rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        &.change_pic_popup {
+            .popup_frame {
+                .popup_header {
+                    .btn_popup_close {
+                        left: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*darkMode style*/
+.dark {
+    .popup {
+        &.change_pic_popup {
+            .popup_frame {
+                .popup_body {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2rem;
+                    padding: 2rem 1.6rem;
+
+                    button {
+                        &.btn_take_photo {
+                            background-image: url("../../image/dark/icon/icon_camera.png");
+                        }
+
+                        &.btn_choose_file {
+                            background-image: url("../../image/dark/icon/icon_folder.png");
+                        }
+                    }
+                }
+            }
+        }
+
+        .popup_frame {
+            .popup_header {
+                .btn_popup_close {
+                    background-image: url("../../image/dark/btn/btn_close.png");
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+/*payment style*/
+.payment_section {
+    padding: 2.4rem 2.4rem 2.4rem;
+
+    ul {
+        >li {
+            height: 6.6rem;
+            position: relative;
+            margin-bottom: 1.2rem;
+
+            &::after {
+                content: "";
+                display: block;
+                width: calc(100% - 6rem);
+                height: .1rem;
+                background-color: var(--colorBdBtn);
+                position: absolute;
+                bottom: 0;
+                right: 0;
+            }
+
+            a {
+                display: flex;
+            }
+
+            figure {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 4.8rem;
+                height: 4.8rem;
+                background-color: var(--colorBgCard);
+                border: 1px solid var(--colorBdCard);
+                border-radius: 1.6rem;
+            }
+
+            .card_info_box {
+                display: flex;
+                flex-direction: column;
+                padding: .5rem 0 0 1.2rem;
+
+                strong {
+                    font-weight: 600;
+                    font-size: 1.4rem;
+                    color: var(--colorTitle);
+                    padding-bottom: .5rem;
+                }
+
+                p {
+                    font-weight: 400;
+                    font-size: 1.2rem;
+                    color: var(--colorValueText);
+                }
+            }
+
+            .btn_edit {
+                width: 2.4rem;
+                height: 2.4rem;
+                background: url("../../image/light/btn/btn_edit.png") no-repeat;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 0;
+            }
+        }
+    }
+}
+
+.btn {
+    &.btn_payment {
+        bottom: 4rem;
+    }
+}
+
+/*darkMode style*/
+.dark {
+    .payment_section {
+        ul {
+            >li {
+                .btn_edit {
+                    background-image: url("../../image/dark/btn/btn_edit.png");
+                }
+            }
+        }
+    }
+}

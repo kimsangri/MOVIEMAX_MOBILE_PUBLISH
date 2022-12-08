@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviemax</title>
+    <link rel="stylesheet" href="../component/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="../common/css/fontStyle.css">
+    <link rel="stylesheet" href="../common/css/default.css">
+    <link rel="stylesheet" href="../page/css/index.css">
+    <link rel="stylesheet" href="../page/css/swiper.css">
+    <link rel="stylesheet" href="../page/css/profile.css">
+    <link rel="stylesheet" href="../page/css/popup.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <h2 class="sub_title">Profile</h2>
+        <a href="setting.html" class="btn_back"><span class="hide">back</span></a>
+    </header>
+
+    <section class="profile_wrap">
+        <div class="profile_box">
+            <h1 class="profile_img" tabindex="0"><a href=""><span class="hide">profile image</span></a></h1>
+        </div>
+    </section>
+
+    <section class="profile_section">
+        <h2><span class="hide">profile info</span></h2>
+        <div class="profile_group">
+            <label class="input_title" for="firstname">First Name</label>
+            <input type="text" class="profile_input" id="firstname" value="Andy">
+        </div>
+        <div class="profile_group">
+            <label class="input_title" for="lastname">Last Name</label>
+            <input type="text" class="profile_input" id="lastname" value="Lexsian">
+        </div>
+        <div class="profile_group">
+            <label class="input_title" for="email">E-mail</label>
+            <input type="text" class="profile_input" id="email" value="Andylexian22@gmail.com">
+        </div>
+        <div class="profile_group">
+            <label class="input_title" for="date">Date of Birth</label>
+            <div class="date_box">
+                <input type="text" class="profile_input" id="date" value="24 february 1996">
+            </div>
+        </div>
+        <div class="profile_group">
+            <label class="input_title">Gender</label>
+            <div class="gender_box">
+                <input type="radio" id="male" name="gender" class="hide" checked>
+                <label class="gender_title" for="male">Male</label>
+                <input type="radio" id="female" name="gender" class="hide">
+                <label class="gender_title" for="female">Female</label>
+            </div>
+        </div>
+        <div class="profile_group">
+            <label class="input_title" for="location">Location</label>
+            <textarea id="location" class="location_text" placeholder="sample text"></textarea>
+        </div>
+        <button type="button" class="btn_save_change">Save Changes</button>
+    </section>
+
+    <!--changePicPopup-->
+    <div class="popup change_pic_popup">
+        <div class="popup_frame">
+            <header class="popup_header">
+                <button type="button" class="btn_popup_close"><span class="hide">close popup</span></button>
+                <h2 class="popup_title">Change your picture</h2>
+            </header>
+            <div class="popup_body">
+                <button type="button" class="btn_take_photo">Take a photo</button>
+                <button type="button" class="btn_choose_file">Choose from your file</button>
+                <button type="button" class="btn_delete_photo">Delete Photo</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../component/swiper/swiper-bundle.min.js"></script>
+    <script src="../../publish/page/js/swiper.js"></script>
+    <script src="../../publish/page/js/button.js"></script>
+    <script src="../../publish/page/js/changePicPopup.js"></script>
+</body>
+
+</html>

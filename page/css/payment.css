@@ -1,0 +1,88 @@
+/*payment style*/
+.payment_section {
+  padding: 2.4rem 2.4rem 2.4rem;
+}
+
+.payment_section ul > li {
+  height: 6.6rem;
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.payment_section ul > li::after {
+  content: "";
+  display: block;
+  width: calc(100% - 6rem);
+  height: .1rem;
+  background-color: var(--colorBdBtn);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.payment_section ul > li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.payment_section ul > li figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 4.8rem;
+  height: 4.8rem;
+  background-color: var(--colorBgCard);
+  border: 1px solid var(--colorBdCard);
+  border-radius: 1.6rem;
+}
+
+.payment_section ul > li .card_info_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: .5rem 0 0 1.2rem;
+}
+
+.payment_section ul > li .card_info_box strong {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--colorTitle);
+  padding-bottom: .5rem;
+}
+
+.payment_section ul > li .card_info_box p {
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: var(--colorValueText);
+}
+
+.payment_section ul > li .btn_edit {
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url("../../image/light/btn/btn_edit.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+
+.btn.btn_payment {
+  bottom: 4rem;
+}
+
+/*darkMode style*/
+.dark .payment_section ul > li .btn_edit {
+  background-image: url("../../image/dark/btn/btn_edit.png");
+}

@@ -1,0 +1,63 @@
+/*search style*/
+.list_section {
+    &.search_section {
+        padding: 0 2.4rem;
+
+        ul {
+            &.movie_list {
+                >li {
+                    margin-bottom: 2.4rem;
+
+                    .info_box {
+                        width: calc(100% - 12rem);
+
+                        .movie_name {
+                            padding-bottom: 1.5rem;
+                        }
+
+                        .info_block {
+                            flex-direction: column;
+                            align-items: flex-start;
+
+                            .category_text {
+                                color: var(--colorInfoText);
+                                padding-bottom: 0;
+                                padding-left: 2rem;
+                                background: url("../../image/light/icon/icon_film.png") no-repeat -0.1rem -0.1rem;
+                            }
+
+                            .time_text {
+                                padding-bottom: 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.category_section {
+    padding-top: 0;
+}
+
+/*darkMode style*/
+.dark {
+    .list_section {
+        &.search_section {
+            ul {
+                &.movie_list {
+                    >li {
+                        .info_box {
+                            .info_block {
+                                .category_text {
+                                    background-image: url("../../image/dark/icon/icon_film.png");
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

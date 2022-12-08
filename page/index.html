@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviemax</title>
+    <link rel="stylesheet" href="../component/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="../common/css/fontStyle.css">
+    <link rel="stylesheet" href="../common/css/default.css">
+    <link rel="stylesheet" href="../page/css/index.css">
+    <link rel="stylesheet" href="../page/css/swiper.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <section class="profile_wrap">
+            <div class="profile_box">
+                <h1 class="profile_img"><a href="setting.html" aria-label="profile image"></a>
+                </h1>
+                <div class="profile_text_box">
+                    <h2 class="user_name">Hi, Andy</h2>
+                    <p class="sub_text">only streaming movie lovers</p>
+                </div>
+            </div>
+            <div>
+                <a href="" class="btn_alarm active"><span class="hide">alarm</span></a>
+            </div>
+        </section>
+    </header>
+
+    <section>
+        <h2><span class="hide">search</span></h2>
+        <div class="search_box">
+            <label class="hide" for="search">search</label>
+            <input type="text" class="search_input" id="search" placeholder="Search...">
+            <button type="button" class="btn_filter_open dimmed_state"><span class="hide">view filter</span></button>
+        </div>
+    </section>
+
+    <section>
+        <h2><span class="hide">movie slide</span></h2>
+        <!--movieSwiper-->
+        <div class="swiper movieSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="movieDetail.html">
+                        <figure>
+                            <img src="../image/light/img/img_thumb_03.png" alt="">
+                            <figcaption>
+                                <p class="category_text">Action</p>
+                                <strong class="movie_name">SEA BEAST</strong>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="movieDetail.html">
+                        <figure>
+                            <img src="../image/light/img/img_thumb_01.png" alt="">
+                            <figcaption>
+                                <p class="category_text">Action</p>
+                                <strong class="movie_name">Thor: Love and Thunder</strong>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="movieDetail.html">
+                        <figure>
+                            <div>
+                                <img src="../image/light/img/img_thumb_02.png" alt="">
+                            </div>
+                            <figcaption>
+                                <p class="category_text">Action</p>
+                                <strong class="movie_name">Luck</strong>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </div>
+            <div class="paging"></div>
+        </div>
+    </section>
+
+    <section class="category_section">
+        <div class="title_area">
+            <h2 class="section_title">Category</h2>
+        </div>
+        <!--cateSwiper-->
+        <div class="swiper cateSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="" class="active">
+                        <p class="cate_text">All</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <p class="cate_text">Action</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <p class="cate_text">Adventure</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <p class="cate_text">Mystery</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="list_section">
+        <div class="title_area">
+            <h2 class="section_title">Box Office</h2>
+            <a href="" class="btn_see_all">See All</a>
+        </div>
+        <ul class="movie_list">
+            <li>
+                <a href="movieDetail.html">
+                    <figure>
+                        <img src="../image/light/img/img_thumb_04.png" alt="">
+                    </figure>
+                    <div class="info_box">
+                        <p class="category_text">Action</p>
+                        <h3 class="movie_name">Drifting Home</h3>
+                        <div class="info_block">
+                            <p class="time_text">148 Minutes</p>
+                            <p class="grade_value"><span>4.4</span>(52)</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="movieDetail.html">
+                    <figure>
+                        <img src="../image/light/img/img_thumb_05.png" alt="">
+                    </figure>
+                    <div class="info_box">
+                        <p class="category_text">Action</p>
+                        <h3 class="movie_name">Jurasssic World</h3>
+                        <div class="info_block">
+                            <p class="time_text">148 Minutes</p>
+                            <p class="grade_value"><span>4.4</span>(52)</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="movieDetail.html">
+                    <figure>
+                        <img src="../image/light/img/img_thumb_05.png" alt="">
+                    </figure>
+                    <div class="info_box">
+                        <p class="category_text">Action</p>
+                        <h3 class="movie_name">Jurasssic World</h3>
+                        <div class="info_block">
+                            <p class="time_text">148 Minutes</p>
+                            <p class="grade_value"><span>4.4</span>(52)</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!--quickMenu-->
+    <nav class="quick_menu">
+        <ul>
+            <li><a href="explore.html"><span class="hide">discover</span></a></li>
+            <li class="btn_play"><a href=""><span class="hide">play</span></a></li>
+            <li><a href="index.html"><span class="hide">home</span></a></li>
+            <li class="btn_download"><a href=""><span class="hide">download</span></a></li>
+            <li><a href="setting.html"><span class="hide">profile</span></a></li>
+        </ul>
+    </nav>
+
+    <script src="../component/swiper/swiper-bundle.min.js"></script>
+    <script src="../../publish/page/js/swiper.js"></script>
+    <script src="../../publish/page/js/button.js"></script>
+    <script src="../../publish/page/js/search.js"></script>
+</body>
+
+</html>

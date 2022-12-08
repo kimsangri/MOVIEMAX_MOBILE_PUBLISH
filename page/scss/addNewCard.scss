@@ -1,0 +1,54 @@
+/*addNewCard style*/
+.add_card_section {
+    padding: 2.4rem 2.4rem 2.4rem;
+
+    .add_card_group {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1.6rem;
+
+        .input_title {
+            font-weight: 500;
+            font-size: 1.4rem;
+            color: var(--colorTitle);
+            padding-bottom: .8rem;
+        }
+
+        .card_input {
+            width: 100%;
+            height: 5.2rem;
+            background-color: var(--colorBgInput);
+            border: 1px solid var(--colorBdInput);
+            border-radius: 2.4rem;
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: var(--colorTitle);
+            padding: 0 1.6rem;
+
+            &::placeholder {
+                color: #9CA4AB;
+            }
+
+            &:focus {
+                border-color: #514EB6;
+            }
+        }
+
+        &.seperate_group {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .seperate_box {
+            display: flex;
+            flex-direction: column;
+            width: calc(50% - .8rem);
+        }
+    }
+}
+
+.btn {
+    &.btn_add_card {
+        bottom: 4rem;
+    }
+}

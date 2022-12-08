@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviemax</title>
+    <link rel="stylesheet" href="../component/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="../common/css/fontStyle.css">
+    <link rel="stylesheet" href="../common/css/default.css">
+    <link rel="stylesheet" href="../page/css/index.css">
+    <link rel="stylesheet" href="../page/css/swiper.css">
+    <link rel="stylesheet" href="../page/css/explore.css">
+    <link rel="stylesheet" href="../page/css/popup.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <h2 class="sub_title">Explore</h2>
+    </header>
+
+    <section>
+        <h2><span class="hide">search</span></h2>
+        <div class="search_box">
+            <label class="hide" for="search">search</label>
+            <input type="text" id="search" class="search_input" placeholder="Search...">
+            <button type="button" class="btn_filter_open dimmed"><span class="hide">view filter</span></button>
+        </div>
+    </section>
+
+    <section class="category_section">
+        <h2><span class="hide">category</span></h2>
+        <!--cateSwiper-->
+        <div class="swiper cateSwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="" class="active">
+                        <p class="cate_text">All</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <p class="cate_text">Action</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <p class="cate_text">Adventure</p>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="">
+                        <p class="cate_text">Mystery</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner_section">
+        <h2><span class="hide">banner</span></h2>
+        <a href="premiumAccount.html" class="banner_box">
+            <strong>Discover</strong>
+            <p>25% discount for 1 year<br>subscription</p>
+            <span type="button" class="subscribe_text">Subscribe</span>
+        </a>
+    </section>
+
+    <section class="release_section">
+        <div class="title_area">
+            <h2 class="section_title">Release Today</h2>
+        </div>
+        <!--releaseSwiper-->
+        <div class="swiper releaseSwiper">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <div>
+                        <a href="movieDetail.html">
+                            <figure>
+                                <div><img src="../image/light/img/img_thumb_08.png" alt=""></div>
+                            </figure>
+                            <div class="info_box">
+                                <p class="grade_text grade_premium">Premium</p>
+                                <h3 class="movie_name">Fistful of Vengeance</h3>
+                                <div class="info_block">
+                                    <p class="time_text">148 Minutes</p>
+                                    <p class="date_text">17 Sep 2021</p>
+                                    <p class="category_text">Action</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                <li class="swiper-slide">
+                    <div>
+                        <a href="movieDetail.html">
+                            <figure>
+                                <div><img src="../image/light/img/img_thumb_07.png" alt=""></div>
+                            </figure>
+                            <div class="info_box">
+                                <p class="grade_text grade_premium">Premium</p>
+                                <h3 class="movie_name">Luck</h3>
+                                <div class="info_block">
+                                    <p class="time_text">148 Minutes</p>
+                                    <p class="date_text">17 Sep 2021</p>
+                                    <p class="category_text">Action</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="list_section">
+        <div class="title_area">
+            <h2 class="section_title">Box Office</h2>
+            <a href="" class="btn_see_all">See All</a>
+        </div>
+        <ul class="movie_list">
+            <li>
+                <a href="movieDetail.html">
+                    <figure>
+                        <img src="../image/light/img/img_thumb_04.png" alt="">
+                    </figure>
+                    <div class="info_box">
+                        <p class="category_text">Action</p>
+                        <h3 class="movie_name">Drifting Home</h3>
+                        <div class="info_block">
+                            <p class="time_text">148 Minutes</p>
+                            <p class="grade_value"><span>4.4</span>(52)</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="movieDetail.html">
+                    <figure>
+                        <img src="../image/light/img/img_thumb_05.png" alt="">
+                    </figure>
+                    <div class="info_box">
+                        <p class="category_text">Action</p>
+                        <h3 class="movie_name">Jurasssic World</h3>
+                        <div class="info_block">
+                            <p class="time_text">148 Minutes</p>
+                            <p class="grade_value"><span>4.4</span>(52)</p>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </section>
+
+    <!--quickMenu-->
+    <nav class="quick_menu">
+        <ul>
+            <li class="active"><a href=""><span class="hide">discover</span></a>
+            </li>
+            <li><a href=""><span class="hide">play</span></a></li>
+            <li><a href="index.html"><span class="hide">home</span></a></li>
+            <li><a href=""><span class="hide">download</span></a></li>
+            <li><a href="setting.html"><span class="hide">profile</span></a></li>
+        </ul>
+    </nav>
+
+    <!--filterPopup-->
+    <div class="popup filter_popup">
+        <div class="popup_frame">
+            <header class="popup_header">
+                <button type="button" class="btn_popup_close"><span class="hide">close popup</span></button>
+                <h2 class="popup_title">Filter</h2>
+                <a href="" class="btn_reset_filter">Reset Filters</a>
+            </header>
+            <div class="popup_body">
+                <div class="filter_box">
+                    <h3 class="popup_sub_title">Categories</h3>
+                    <div class="btn_filter_group">
+                        <div>
+                            <button type="button" class="btn_filter">All</button>
+                            <button type="button" class="btn_filter active">Action</button>
+                            <button type="button" class="btn_filter">Adventure</button>
+                        </div>
+                        <div>
+                            <button type="button" class="btn_filter">Mystery</button>
+                            <button type="button" class="btn_filter">Fantasy</button>
+                            <button type="button" class="btn_filter">Others</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter_box">
+                    <h3 class="popup_sub_title">Type</h3>
+                    <div class="btn_filter_group">
+                        <button type="button" class="btn_type">Premium</button>
+                        <button type="button" class="btn_type active">Free</button>
+                    </div>
+                </div>
+                <div class="filter_box">
+                    <h3 class="popup_sub_title">Star Rating</h3>
+                    <div class="btn_rating_group">
+                        <div>
+                            <button type="button" class="btn_rating"><span></span></button>
+                            <button type="button" class="btn_rating"><span></span><span></span></button>
+                            <button type="button"
+                                class="btn_rating active"><span></span><span></span><span></span></button>
+                        </div>
+                        <div>
+                            <button type="button"
+                                class="btn_rating"><span></span><span></span><span></span><span></span></button>
+                            <button type="button"
+                                class="btn_rating"><span></span><span></span><span></span><span></span><span></span></button>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn_apply">Apply Filters</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="../component/swiper/swiper-bundle.min.js"></script>
+    <script src="../../publish/page/js/swiper.js"></script>
+    <script src="../../publish/page/js/filterPopup.js"></script>
+    <script src="../../publish/page/js/button.js"></script>
+</body>
+
+</html>

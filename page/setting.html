@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviemax</title>
+    <link rel="stylesheet" href="../component/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../common/css/reset.css">
+    <link rel="stylesheet" href="../common/css/fontStyle.css">
+    <link rel="stylesheet" href="../common/css/default.css">
+    <link rel="stylesheet" href="../page/css/index.css">
+    <link rel="stylesheet" href="../page/css/swiper.css">
+    <link rel="stylesheet" href="../page/css/setting.css">
+</head>
+
+<body>
+    <!--header-->
+    <header class="header">
+        <h2 class="sub_title">Setting</h2>
+        <a href="index.html" class="btn_back"><span class="hide">back</span></a>
+    </header>
+
+    <section class="profile_wrap">
+        <div class="profile_box">
+            <h1 class="profile_img"><a href=""><span class="hide">profile image</span></a></h1>
+            <div class="profile_text_box">
+                <h2 class="user_name">Andy Lexsian</h2>
+                <p class="sub_text">@Andy1999</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="setting_section">
+        <div class="setting_group">
+            <h3 class="group_title">Personal Info</h3>
+            <ul>
+                <li class="btn_profile">
+                    <a href="profile.html">Profile</a>
+                </li>
+                <li class="btn_wishlist">
+                    <a href="">Wishlist</a>
+                </li>
+                <li class="btn_payment">
+                    <a href="payment.html">Payment Method</a>
+                </li>
+            </ul>
+        </div>
+        <div class="setting_group">
+            <h3 class="group_title">Security</h3>
+            <ul>
+                <li class="btn_change_pw">
+                    <a href="">Change Password</a>
+                </li>
+                <li class="btn_forgot_pw">
+                    <a href="">Forgot Password</a>
+                </li>
+                <li class="btn_security">
+                    <a href="">Security</a>
+                </li>
+            </ul>
+        </div>
+        <div class="setting_group">
+            <h3 class="group_title">General</h3>
+            <ul>
+                <li class="btn_language">
+                    <a href="">Language</a>
+                </li>
+                <li class="btn_clear_cache">
+                    <a href="">Clear Cache</a>
+                    <span class="cache_value">88 MB</span>
+                </li>
+            </ul>
+        </div>
+        <div class="setting_group">
+            <h3 class="group_title">About</h3>
+            <ul>
+                <li class="btn_legal">
+                    <a href="">Legal and Policies</a>
+                </li>
+                <li class="btn_help">
+                    <a href="">Help & Support</a>
+                </li>
+                <li class="btn_dark_mode">
+                    <a href="">Dark Mode</a>
+                    <input type="text" id="toggle" class="hide">
+                    <label for="toggle" class="toggle_switch">
+                        <span class="btn_toggle"></span>
+                    </label>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="btn_logout">Log Out</button>
+    </section>
+
+    <!--quickMenu-->
+    <nav class="quick_menu">
+        <ul>
+            <li><a href="explore.html"><span class="hide">discover</span></a></li>
+            <li class="btn_play"><a href=""><span class="hide">play</span></a></li>
+            <li><a href="index.html"><span class="hide">home</span></a></li>
+            <li class="btn_download"><a href=""><span class="hide">download</span></a></li>
+            <li class="active"><a href="setting.html"><span class="hide">profile</span></a></li>
+        </ul>
+    </nav>
+
+    <script src="../component/swiper/swiper-bundle.min.js"></script>
+    <script src="../../publish/page/js/swiper.js"></script>
+    <script src="../../publish/page/js/button.js"></script>
+</body>
+
+</html>

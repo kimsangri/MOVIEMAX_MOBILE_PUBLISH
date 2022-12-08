@@ -1,0 +1,250 @@
+/*setting style*/
+.profile_wrap {
+  padding: 2.4rem 2.4rem 0;
+}
+
+.profile_wrap .profile_box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profile_wrap .profile_box .profile_img {
+  width: 5.6rem;
+  height: 5.6rem;
+  background: url("../../image/light/img/img_profile_big.png") no-repeat;
+  background-size: 100%;
+}
+
+.profile_wrap .profile_box .profile_text_box .user_name {
+  padding-bottom: .2rem;
+}
+
+.profile_wrap .profile_box .profile_text_box .sub_text {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--colorIdText);
+}
+
+.setting_section {
+  padding: 3.2rem 2.1rem 10rem 2.4rem;
+}
+
+.setting_section .setting_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.setting_section .setting_group .group_title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--colorTitle);
+  padding-bottom: .5rem;
+}
+
+.setting_section .setting_group ul > li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 5.6rem;
+  padding-left: 3.6rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.setting_section .setting_group ul > li::after {
+  content: "";
+  display: block;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: url("../../image/light/btn/btn_next.png") no-repeat;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+
+.setting_section .setting_group ul > li a {
+  display: block;
+  width: 100%;
+  height: 5.6rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 5.6rem;
+  color: var(--colorTitle);
+}
+
+.setting_section .setting_group ul > li .cache_value {
+  font-weight: 500;
+  font-size: 12px;
+  color: var(--colorTitle);
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+
+.setting_section .setting_group ul > li.btn_profile {
+  background: url("../../image/light/icon/icon_person.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_wishlist {
+  background: url("../../image/light/icon/icon_bookmark.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_payment {
+  background: url("../../image/light/icon/icon_work.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_change_pw {
+  background: url("../../image/light/icon/icon_lock.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_forgot_pw {
+  background: url("../../image/light/icon/icon_unlock.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_security {
+  background: url("../../image/light/icon/icon_shield_done.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_language {
+  background: url("../../image/light/icon/icon_global.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_clear_cache {
+  background: url("../../image/light/icon/icon_trash.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_clear_cache::after {
+  display: none;
+}
+
+.setting_section .setting_group ul > li.btn_legal {
+  background: url("../../image/light/icon/icon_shield.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_help {
+  background: url("../../image/light/icon/icon_help.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_dark_mode {
+  background: url("../../image/light/icon/icon_activity.png") no-repeat left center;
+}
+
+.setting_section .setting_group ul > li.btn_dark_mode::after {
+  display: none;
+}
+
+.setting_section .btn_logout {
+  width: 100%;
+  height: 6rem;
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #514EB6;
+  background-color: transparent;
+  border: 1px solid #514EB6;
+  border-radius: 3.2rem;
+}
+
+.toggle_switch {
+  display: block;
+  width: 4.4rem;
+  height: 2.4rem;
+  display: block;
+  position: relative;
+  border-radius: 2.4rem;
+  background-color: #EDF2F7;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+.toggle_switch.active {
+  background-color: #514EB6;
+}
+
+.toggle_switch.active .btn_toggle {
+  right: calc(100% - 4.2rem);
+  background-color: #FEFEFE;
+}
+
+.toggle_switch .btn_toggle {
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top: 50%;
+  right: 2.2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #FEFEFE;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+/*darkMode style*/
+.dark .setting_section .setting_group ul > li::after {
+  background-image: url("../../image/dark/btn/btn_next.png");
+}
+
+.dark .setting_section .setting_group ul > li.btn_profile {
+  background-image: url("../../image/dark/icon/icon_person.png");
+}
+
+.dark .setting_section .setting_group ul > li.btn_wishlist {
+  background-image: url("../../image/dark/icon/icon_bookmark.png");
+}
+
+.dark .setting_section .setting_group ul > li.btn_payment {
+  background-image: url("../../image/dark/icon/icon_work.png");
+}
+
+.dark .setting_section .setting_group ul > li.btn_change_pw {
+  background-image: url("../../image/dark/icon/icon_lock.png");
+}
+
+.dark .setting_section .setting_group ul > li.btn_forgot_pw {
+  background-image: url("../../image/dark/icon/icon_unlock.png");
+}
+
+.dark .setting_section .setting_group ul > li.btn_security {
+  background-image: url("../../image/dark/icon/icon_shield_done.png");
+}
+
+.dark .setting_section .setting_group ul > li.btn_language {
+  background-image: url("../../image/dark/icon/icon_global.png");
+}
+
+.dark .setting_section .setting_group ul > li.btn_clear_cache {
+  background-image: url("../../image/dark/icon/icon_trash.png");
+}
+
+.dark .setting_section .setting_group ul > li.btn_legal {
+  background-image: url("../../image/dark/icon/icon_shield.png");
+}
+
+.dark .setting_section .setting_group ul > li.btn_help {
+  background-image: url("../../image/dark/icon/icon_help.png");
+}
+
+.dark .setting_section .setting_group ul > li.btn_dark_mode {
+  background-image: url("../../image/dark/icon/icon_activity.png");
+}
