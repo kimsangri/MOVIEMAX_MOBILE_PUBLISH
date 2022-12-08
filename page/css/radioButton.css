@@ -2,11 +2,11 @@
 input[type="radio"] {
     border: 0;
     clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
+    height: .1rem;
+    margin: -.1rem;
     overflow: hidden;
     padding: 0;
-    width: 1px;
+    width: .1rem;
     float: left;
     display: none;
 }
@@ -20,7 +20,7 @@ input[type="radio"]:active+label:before {
 
 input[type="radio"]+label {
     position: relative;
-    padding: 0px 18.5px 0px 0px;
+    padding: 0 1.85rem 0 0;
     padding-left: 1.6em;
     vertical-align: middle;
     -webkit-user-select: none;
