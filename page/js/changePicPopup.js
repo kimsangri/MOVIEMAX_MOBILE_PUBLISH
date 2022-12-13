@@ -12,7 +12,7 @@ changePicPopupOpen.addEventListener("click", function (e) {
     changePicPopup.classList.remove("off");
     changePicPopupFrame.classList.remove("off");
     document.body.style.overflow = "hidden";
-})
+});
 
 //changePicPopup Close
 changePicPopupClose.addEventListener("click", function () {
@@ -21,4 +21,4 @@ changePicPopupClose.addEventListener("click", function () {
     changePicPopup.classList.add("off");
     changePicPopupFrame.classList.add("off");
     document.body.style.overflow = "visible";
-})
+});
