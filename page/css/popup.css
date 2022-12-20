@@ -188,7 +188,7 @@
   position: absolute;
   opacity: 0;
   visibility: hidden;
-  height: 0;
+  height: auto;
   -webkit-transition: 0.7s all;
   transition: 0.7s all;
 }
@@ -202,7 +202,6 @@
 .popup .popup_frame.off {
   opacity: 0;
   visibility: hidden;
-  height: 0;
 }
 
 .popup .popup_frame .popup_header {
